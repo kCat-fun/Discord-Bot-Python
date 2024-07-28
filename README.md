@@ -1,5 +1,8 @@
 # Discord-Bot-Python
-Disocrdで2サーバー間でメッセージのやり取りをするBot
+Disocrdで2サーバー間でメッセージのやり取りをするBotです。<br/><br/>
+**使用例**<br /><br />
+![image](https://github.com/user-attachments/assets/c7fd6299-e422-43ca-a092-fa35d4eee83b)<br />
+![image](https://github.com/user-attachments/assets/c3be22bb-638a-4cf0-8d5d-bc2ad5956cfa)
 
 ## 使い方
 1. このレポジトリをcloneする
