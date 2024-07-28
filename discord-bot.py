@@ -28,11 +28,11 @@ async def on_message(message):
 
     if message.channel.id == CHANNEL1_ID:
         channel2 = client.get_channel(CHANNEL2_ID)
-        await channel2.send(message.content)
+        await channel2.send(f'[チャンネル1]\t__{ message.author }__ >>\n> { message.content }')
 
     if message.channel.id == CHANNEL2_ID:
         channel1 = client.get_channel(CHANNEL1_ID)
-        await channel1.send(message.content)
+        await channel1.send(f'[チャンネル2]\t__{ message.author }__ >>\n> { message.content }')
 
 # Bot起動
 client.run(TOKEN)
