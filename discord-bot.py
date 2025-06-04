@@ -25,14 +25,18 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+    
+    msg: str = ""
+    for s in message.content.splitlines():
+        msg += f"> {s}\n"
 
     if message.channel.id == CHANNEL1_ID:
         channel2 = client.get_channel(CHANNEL2_ID)
-        await channel2.send(f'[チャンネル1]\t__{ message.author }__ >>\n> { message.content }')
+        await channel2.send(f'[チャンネル1]\t__{ message.author }__ >>\n{ msg }')
 
     if message.channel.id == CHANNEL2_ID:
         channel1 = client.get_channel(CHANNEL1_ID)
-        await channel1.send(f'[チャンネル2]\t__{ message.author }__ >>\n> { message.content }')
+        await channel1.send(f'[チャンネル2]\t__{ message.author }__ >>\n{ msg }')
 
 # Bot起動
 client.run(TOKEN)
