@@ -17,12 +17,21 @@ nano .env
 ```
 ```env:.env
 TOKEN=
+# discord-bot.pyで必要
 CHANNEL1=
 CHANNEL2=
+# key-manage-bot.pyで必要
+HARDWARE_BUTTON_CHANNEL=
+HARDWARE_LOG_CHANNEL=
+FACTORY_BUTTON_CHANNEL=
+FACTORY_LOG_CHANNEL=
 ```
 4. discord-bot.pyを実行する
 ```bash
+# メッセージ送受信Bot
 python3 discord-bot.py
+# 鍵管理Bot
+python3 select-button-bot.py
 ```
 ※ ライブラリがインストールされてない場合は以下を実行
 ```bash
