@@ -31,7 +31,7 @@ FACTORY_LOG_CHANNEL=
 # メッセージ送受信Bot
 python3 discord-bot.py
 # 鍵管理Bot
-python3 select-button-bot.py
+python3 key-manage-bot.py.py
 ```
 ※ ライブラリがインストールされてない場合は以下を実行
 ```bash
